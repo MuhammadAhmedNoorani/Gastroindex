@@ -8,7 +8,7 @@
     <script src="https://kit.fontawesome.com/f775125562.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="bg-slate-100">
+<body class="bg-slate-100  mx-auto">
     <!-- Header -->
     <header class="hidden bg-cyan-900 p-5 md:flex text-white justify-between">
         <h6 class="text-lg sm:text-2xl font-bold pl-12 sm:pl-5">gastroindex</h6>
@@ -183,9 +183,7 @@
             <p class="font-bold text-sm md:text-base whitespace-nowrap">69.6%</p>
         </div>
     </div>
-
-
-
+    
     <!-- line break -->
     <!-- <br class="border-b-2 m-12 border-gray-700 h-5 w-full"> -->
     <div class="bg-gray-300 m-1 h-[1px] w-auto my-5 mx-12"></div>
@@ -303,11 +301,7 @@
     <script>
         document.getElementById('navtoggle').addEventListener('click', () => {
             const nav = document.querySelector('#navbar');
-            if (nav.classList.contains('lg:hidden')) {
-                nav.classList.remove('lg:hidden');
-            } else {
-                nav.classList.add('lg:hidden');
-            }
+            nav.classList.contains('lg:hidden') ? nav.classList.remove('lg:hidden') : nav.classList.add('lg:hidden');
         });
     </script>
 </body>
